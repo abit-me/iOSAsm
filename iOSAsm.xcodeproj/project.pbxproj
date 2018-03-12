@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		00AB57DA2056656F00D5FA1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57D92056656F00D5FA1E /* AppDelegate.m */; };
 		00AB57DD2056656F00D5FA1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57DC2056656F00D5FA1E /* ViewController.m */; };
-		00AB57E02056656F00D5FA1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AB57DE2056656F00D5FA1E /* Main.storyboard */; };
 		00AB57E22056656F00D5FA1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AB57E12056656F00D5FA1E /* Assets.xcassets */; };
 		00AB57E52056656F00D5FA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AB57E32056656F00D5FA1E /* LaunchScreen.storyboard */; };
-		00AB57E82056656F00D5FA1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57E72056656F00D5FA1E /* main.m */; };
+		00AB57F12056670F00D5FA1E /* main_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57F02056670F00D5FA1E /* main_arm64.s */; };
+		00AB57F320567DE500D5FA1E /* hello.s in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57F220567DE500D5FA1E /* hello.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		00AB57D92056656F00D5FA1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00AB57DB2056656F00D5FA1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		00AB57DC2056656F00D5FA1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		00AB57DF2056656F00D5FA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00AB57E12056656F00D5FA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00AB57E42056656F00D5FA1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00AB57E62056656F00D5FA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00AB57E72056656F00D5FA1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00AB57F02056670F00D5FA1E /* main_arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = main_arm64.s; sourceTree = "<group>"; };
+		00AB57F220567DE500D5FA1E /* hello.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = hello.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +62,11 @@
 				00AB57D92056656F00D5FA1E /* AppDelegate.m */,
 				00AB57DB2056656F00D5FA1E /* ViewController.h */,
 				00AB57DC2056656F00D5FA1E /* ViewController.m */,
-				00AB57DE2056656F00D5FA1E /* Main.storyboard */,
 				00AB57E12056656F00D5FA1E /* Assets.xcassets */,
 				00AB57E32056656F00D5FA1E /* LaunchScreen.storyboard */,
 				00AB57E62056656F00D5FA1E /* Info.plist */,
-				00AB57E72056656F00D5FA1E /* main.m */,
+				00AB57F02056670F00D5FA1E /* main_arm64.s */,
+				00AB57F220567DE500D5FA1E /* hello.s */,
 			);
 			path = iOSAsm;
 			sourceTree = "<group>";
@@ -131,7 +131,6 @@
 			files = (
 				00AB57E52056656F00D5FA1E /* LaunchScreen.storyboard in Resources */,
 				00AB57E22056656F00D5FA1E /* Assets.xcassets in Resources */,
-				00AB57E02056656F00D5FA1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +141,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AB57F320567DE500D5FA1E /* hello.s in Sources */,
 				00AB57DD2056656F00D5FA1E /* ViewController.m in Sources */,
-				00AB57E82056656F00D5FA1E /* main.m in Sources */,
 				00AB57DA2056656F00D5FA1E /* AppDelegate.m in Sources */,
+				00AB57F12056670F00D5FA1E /* main_arm64.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00AB57DE2056656F00D5FA1E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00AB57DF2056656F00D5FA1E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00AB57E32056656F00D5FA1E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,6 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YPNT4LMNL;
 				INFOPLIST_FILE = iOSAsm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.abit.iOSAsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +288,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YPNT4LMNL;
 				INFOPLIST_FILE = iOSAsm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.abit.iOSAsm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
