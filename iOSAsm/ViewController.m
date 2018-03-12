@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "inline_asm.h"
+
 
 @interface ViewController ()
 
@@ -18,6 +20,9 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    long a = add_two_int(102020, 2323);
+    printf("%ld\n", a);
 }
 
 

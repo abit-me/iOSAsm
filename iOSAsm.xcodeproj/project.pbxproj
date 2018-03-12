@@ -13,6 +13,7 @@
 		00AB57E52056656F00D5FA1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AB57E32056656F00D5FA1E /* LaunchScreen.storyboard */; };
 		00AB57F12056670F00D5FA1E /* main_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57F02056670F00D5FA1E /* main_arm64.s */; };
 		00AB57F320567DE500D5FA1E /* hello.s in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57F220567DE500D5FA1E /* hello.s */; };
+		00AB57F62056A7BA00D5FA1E /* inline_asm.c in Sources */ = {isa = PBXBuildFile; fileRef = 00AB57F42056A7BA00D5FA1E /* inline_asm.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		00AB57E62056656F00D5FA1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00AB57F02056670F00D5FA1E /* main_arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = main_arm64.s; sourceTree = "<group>"; };
 		00AB57F220567DE500D5FA1E /* hello.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = hello.s; sourceTree = "<group>"; };
+		00AB57F42056A7BA00D5FA1E /* inline_asm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inline_asm.c; sourceTree = "<group>"; };
+		00AB57F52056A7BA00D5FA1E /* inline_asm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inline_asm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				00AB57E62056656F00D5FA1E /* Info.plist */,
 				00AB57F02056670F00D5FA1E /* main_arm64.s */,
 				00AB57F220567DE500D5FA1E /* hello.s */,
+				00AB57F42056A7BA00D5FA1E /* inline_asm.c */,
+				00AB57F52056A7BA00D5FA1E /* inline_asm.h */,
 			);
 			path = iOSAsm;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				00AB57DD2056656F00D5FA1E /* ViewController.m in Sources */,
 				00AB57DA2056656F00D5FA1E /* AppDelegate.m in Sources */,
 				00AB57F12056670F00D5FA1E /* main_arm64.s in Sources */,
+				00AB57F62056A7BA00D5FA1E /* inline_asm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
